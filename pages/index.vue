@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
-    <h1>The Treeman</h1>
+    <Header />
+    <img src="~assets/images/mainpic.jpg" alt="the sun coming through the trees in the forest" class="hero-image" />
   </div>
 </template>

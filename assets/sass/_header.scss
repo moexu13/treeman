@@ -1,0 +1,64 @@
+.header {
+  // background-color: $color-secondary-light;
+  height: 10rem;
+  padding-bottom: 5rem;
+  position: relative;
+
+  @include respond(tab-port) {
+    height: 8rem;
+    margin-bottom: 2rem;
+  }
+
+  @include respond(phone) {
+    height: 6rem;
+    margin-bottom: 1rem;
+  }
+
+  &__logo {
+    & img {
+      height: auto;
+      object-fit: contain;
+      left: 2rem;
+      position: absolute;
+      top: 2rem;
+      width: 20rem;
+
+      @include respond(tab-port) {
+        height: 6rem;
+        width: 25rem;
+      }
+
+      @include respond(phone) {
+        height: 5rem;
+        left: 1rem;
+        top: 0.8rem;
+        width: 20rem;
+      }
+    }
+  }
+
+  &__phone {
+    position: absolute;
+    right: 3rem;
+    top: 4rem;
+
+    @include respond(phone) {
+      right: 1.5rem;
+      top: 3rem;
+    }
+  }
+
+  &__phone a {
+    color: $color-primary;
+    font-size: 1.6rem;
+    text-decoration: none;
+
+    @include respond(tab-port) {
+      font-size: 1.4rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.2rem;
+    }
+  }
+}

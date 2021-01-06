@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  // this defines 1 rem
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  color: $color-black;
+  font-family: $body-font, "open sans", sans-serif;
+}
+
+a {
+  color: $color-primary-dark;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-primary-light;
+  }
+
+  &:visited {
+    color: $color-primary-dark;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $logo-font, georgia, serif;
+}
